@@ -59,7 +59,6 @@ class ScholarshipResource extends Resource
             ->columns([
                 TextColumn::make('id')->label('ID')->sortable(),
                 TextColumn::make('name')->label('Nama Beasiswa')->sortable(),
-                TextColumn::make('slug')->label('Slug'),
                 TextColumn::make('amount')->label('Jumlah Beasiswa')->sortable(),
                 TextColumn::make('created_at')->label('Dibuat Pada')->dateTime()->sortable()
             ])
