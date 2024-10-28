@@ -20,4 +20,5 @@ class Student extends Model
     {
         return $this->belongsTo(Scholarship::class);
     }
+ 
 }

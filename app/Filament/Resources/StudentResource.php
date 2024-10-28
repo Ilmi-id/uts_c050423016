@@ -41,9 +41,7 @@ class StudentResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\ImageColumn::make('photo')
-                    ->label('Foto')
-                    ->url(fn (Student $record) => $record->photo ? asset('storage/' . $record->photo) : null), // Mengambil URL gambar
+                Tables\Columns\ImageColumn::make('photo'),
                 Tables\Columns\TextColumn::make('name')->label('Nama'),
                 Tables\Columns\TextColumn::make('nim')->label('NIM'),
                 Tables\Columns\TextColumn::make('scholarship.name')->label('Beasiswa'), // Mengambil nama dari relasi beasiswa
